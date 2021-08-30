@@ -1,0 +1,4 @@
+abc = 7;
+Abc = 19;
+abC = 2;
+abc * (Abc - abC);
