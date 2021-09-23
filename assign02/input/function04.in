@@ -1,0 +1,23 @@
+// demonstration of scope
+
+var a, b, c;
+
+a = 1;
+b = 2;
+c = 3;
+
+function add1(a) {
+  var b;
+  b = 1;
+  c = 4;
+  a + b;
+}
+
+var d;
+d = add1(c);
+
+println(a);
+println(b);
+println(c);
+
+d;

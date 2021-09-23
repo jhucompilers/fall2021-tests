@@ -1,0 +1,9 @@
+var x, y;
+
+x = 2;
+
+function add1(a) {
+  a + 1;
+}
+
+y= add1(x);

@@ -1,0 +1,2 @@
+// the print() function should be passed exactly one argument
+print(1, 2);

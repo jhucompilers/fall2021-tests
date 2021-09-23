@@ -1,0 +1,7 @@
+function add1(n) {
+  n+1;
+}
+function apply(f, x) {
+  f(x);
+}
+apply(add1, 42);

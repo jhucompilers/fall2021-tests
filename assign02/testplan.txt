@@ -1,0 +1,18 @@
+arith: basic arithmetic
+  make sure unary - is tested
+assign: variables, assignments
+  uninitialized variables have the value 0
+error: error is reported for referring to undefined variable
+condition: computation of expressions with logical and relational operators
+  make sure all relational operators are tested
+  make sure logical operators are short-circuiting
+decision: decisions (if, if/else)
+loop: while loops
+function: functions
+  function whose body refers to a global variable
+recursion: recursive functions
+output: calling intrinsic output functions
+input: calling intrinsic input function (readint)
+cons: creating and using lists (including formatting)
+tokenization: unusual tokenization
+comment: input programs with comments

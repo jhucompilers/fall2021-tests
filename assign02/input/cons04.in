@@ -1,0 +1,17 @@
+// build a list by applying f to each member of lst
+function map(f, lst) {
+  var result;
+  if (nilp(lst)) {
+    result = lst;
+  } else {
+    result = cons(f(car(lst)), map(f, cdr(lst)));
+  }
+  result;
+}
+
+function times2(x) {
+  x * 2;
+}
+
+// result should be (6 8 10)
+map(times2, list(3, 4, 5));

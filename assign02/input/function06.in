@@ -1,0 +1,4 @@
+var a;
+a = println;
+a(42);
+0;

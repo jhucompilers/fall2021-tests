@@ -1,0 +1,14 @@
+// function to add n to each member of the list lst,
+// returning a list
+function addtomembers(lst, n) {
+  var result;
+  if (nilp(lst)) {
+    result = lst;
+  } else {
+    result = cons(car(lst) + n, addtomembers(cdr(lst), n));
+  }
+  result;
+}
+
+// result should be (11 12 13)
+addtomembers(list(1, 2, 3), 10);

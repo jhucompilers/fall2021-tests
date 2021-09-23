@@ -1,0 +1,11 @@
+function fib(n) {
+  var res;
+  if (n == 0 || n == 1) {
+    res = n;
+  } else {
+    res = fib(n-2) + fib(n-1);
+  }
+  res;
+}
+
+fib(8);

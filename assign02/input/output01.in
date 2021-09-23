@@ -1,0 +1,4 @@
+var a;
+a = 42;
+println(a);
+a;

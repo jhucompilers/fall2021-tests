@@ -1,0 +1,4 @@
+// example of how an improper list should be stringified
+
+// result should be (1 2 . 3)
+cons(1, cons(2, 3));
