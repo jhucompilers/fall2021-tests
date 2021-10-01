@@ -1,0 +1,12 @@
+var x;
+x=90;
+
+function foo() {
+	x = x+1;
+}
+
+if (1 || foo()) {}
+
+if (0 && foo()) {}
+
+x;

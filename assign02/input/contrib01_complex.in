@@ -1,0 +1,86 @@
+function foo(currVal, base) {
+    var ret;
+    ret = -1;
+
+    if (currVal <= 2) {
+        if (currVal == 2) {ret = 1;}
+        else {ret = 0;}
+    }
+
+    if (ret == -1) {
+        //get remainder
+        var tempVal;
+        tempVal = currVal;
+        while(tempVal >= base){
+            tempVal = tempVal - base;
+        }
+        if (tempVal == 0) {ret = 0;}
+    }
+
+    if (ret == -1) {
+        if (base * base > currVal) {ret = 1;}
+    }
+
+    if (ret == -1) {
+        ret = foo(currVal, base+1);
+    }
+
+    ret;
+}
+
+function fooSquare(o, p) {
+    var up;
+    up = -1;
+    if((p * p >= o) && (p * p == o)) {
+        up = 1;
+    }
+    if((p * p >= o) && (p * p != o)) {
+            up = 0;
+    }
+    if (up == -1) {
+        up = fooSquare(o, p + 1);
+    }
+    up;
+}
+
+
+
+
+
+// LOOP HANDLING FOR INTEGERS 1-49
+var i, n;
+i = 1;
+n = 49;
+
+
+function inc() {
+    i = i+1;
+}
+
+function printnumspace(num) {
+    var k;
+    k = 0;
+    while (k < num) {
+        printspace();
+        k = k +1;
+    }
+}
+
+var ps;
+ps = printnumspace;
+
+while (i < n) {
+    print(i);
+    if (i < 10) {ps(5);
+    } else {ps(4);}
+
+    print(foo(i, 2)); //check if prime
+    ps(2);
+    println(fooSquare(i, 0)); //check if perfect square
+
+    inc();
+}
+
+
+
+
