@@ -1,0 +1,8 @@
+PROGRAM input02;
+    TYPE Big = ARRAY 1000 OF INTEGER;
+    VAR big: Big;
+BEGIN
+    READ big[0];
+    READ big[big[0]];
+    READ big[big[big[0]]];
+END.

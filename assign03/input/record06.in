@@ -1,0 +1,11 @@
+PROGRAM record06;
+  VAR x : RECORD
+    x : RECORD
+      x : RECORD
+        x : INTEGER;
+      END;
+    END;
+  END;
+BEGIN
+    READ x.x.x.x;
+END.

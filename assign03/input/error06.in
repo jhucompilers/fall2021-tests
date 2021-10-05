@@ -1,0 +1,8 @@
+PROGRAM error06;
+  TYPE Person = RECORD name : ARRAY 40 OF CHAR; age : INTEGER; END;
+  VAR p : Person;
+
+BEGIN
+  p.age := 42;
+  p.salary := 80000;
+END.

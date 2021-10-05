@@ -1,0 +1,1 @@
+input/error06.in:7:3: Error: Field 'salary' does not exist in type RECORD (ARRAY 40 OF CHAR x INTEGER)

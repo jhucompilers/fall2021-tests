@@ -1,0 +1,6 @@
+PROGRAM error01;
+  VAR x : FLOAT;
+
+BEGIN
+  WRITE 1;
+END.

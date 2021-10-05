@@ -1,0 +1,11 @@
+PROGRAM arr;
+  VAR months: ARRAY 12 OF INTEGER;
+
+BEGIN
+  months[0] := 31;
+  months[1] := 28;
+  months[2] := 31;
+  months[3] := 30;
+
+  WRITE months[3];
+END.

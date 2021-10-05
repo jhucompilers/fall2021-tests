@@ -1,0 +1,7 @@
+PROGRAM error10;
+  VAR arr : ARRAY 10 OF INTEGER;
+
+BEGIN
+  READ arr[0]; -- is ok
+  READ arr;    -- is not ok
+END.

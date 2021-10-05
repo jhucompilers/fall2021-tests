@@ -1,0 +1,15 @@
+PROGRAM input03;
+  VAR sum, n: INTEGER;
+
+BEGIN
+  -- read integer from user
+  READ n;
+  -- continue adding positive numbers
+  sum := 0;
+  WHILE n > 0 DO
+    sum := sum + n;
+    READ n;
+  END;
+  -- output the sum
+  WRITE sum;
+END.

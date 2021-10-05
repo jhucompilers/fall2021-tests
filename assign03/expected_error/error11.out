@@ -1,0 +1,1 @@
+input/error11.in:5:8: Error: Operand of READ has inappropriate type RECORD (ARRAY 20 OF CHAR x INTEGER)

@@ -1,0 +1,7 @@
+PROGRAM error03;
+  VAR a: INTEGER;
+  VAR b: CHAR;
+
+BEGIN
+  WRITE a[0] + b;
+END.

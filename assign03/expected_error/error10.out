@@ -1,0 +1,1 @@
+input/error10.in:6:8: Error: Operand of READ has inappropriate type ARRAY 10 OF INTEGER

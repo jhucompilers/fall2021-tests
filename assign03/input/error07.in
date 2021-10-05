@@ -1,0 +1,9 @@
+PROGRAM error07;
+  VAR str : ARRAY 20 OF CHAR;
+  VAR b : INTEGER;
+
+BEGIN
+  b := 11;
+  b := b + str;
+  WRITE b;
+END.

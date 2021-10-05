@@ -1,0 +1,10 @@
+PROGRAM add;
+  VAR a, b, sum: INTEGER;
+
+BEGIN
+  -- compute the sum 3+4 and write it to the output
+  a := 3;
+  b := 4;
+  sum := a + b;
+  WRITE sum;
+END.

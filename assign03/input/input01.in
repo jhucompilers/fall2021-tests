@@ -1,0 +1,9 @@
+PROGRAM add;
+  VAR a, b, sum: INTEGER;
+
+BEGIN
+  READ a;
+  READ b;
+  sum := a + b;
+  WRITE sum;
+END.

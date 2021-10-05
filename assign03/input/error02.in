@@ -1,0 +1,10 @@
+PROGRAM error02;
+  VAR a, b: INTEGER;
+
+BEGIN
+  a := 1;
+  b := 2;
+  WRITE a;
+  WRITE b;
+  WRITE c;
+END.

@@ -1,0 +1,15 @@
+PROGRAM assign04;
+    TYPE P = RECORD x: INTEGER; END;
+
+    TYPE R = RECORD x, y: INTEGER; END;
+    TYPE Q = RECORD a, b: P; END;
+
+    TYPE T = RECORD d: ARRAY 5 OF Q; END;
+
+    VAR a: ARRAY 10 OF R;
+    VAR b: ARRAY 2  OF T;
+BEGIN
+    -- a := b;
+    a[4].x := 99;
+    b[1].d[0].a.x := a[4].x;
+END.

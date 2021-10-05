@@ -1,0 +1,32 @@
+PROGRAM person;
+  TYPE Person = RECORD
+    name: ARRAY 10 OF CHAR;
+    age: INTEGER;
+  END;
+  TYPE Parent = RECORD
+    details: Person;
+    children: ARRAY 2 OF Person;
+  END;
+  VAR parents : ARRAY 4 OF Parent;
+  VAR i, j, k : INTEGER;
+
+
+BEGIN
+  i := 0;
+  WHILE i < 4 DO
+    k := 0;
+    WHILE k < 10 DO
+      READ parents[i].details.name[k];
+    END;
+    READ parents[i].details.age;
+    j := 0;
+    WHILE j < 2 DO
+      k := 0;
+      WHILE k < 10 DO
+        READ parents[i].children[j].name[k];
+      END;
+      READ parents[i].children[j].name;
+    END;
+
+  END;
+END.

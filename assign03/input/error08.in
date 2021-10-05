@@ -1,0 +1,7 @@
+PROGRAM error08;
+  VAR a : INTEGER;
+  CONST b = a + 1;
+
+BEGIN
+  WRITE 42;
+END.

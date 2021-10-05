@@ -1,0 +1,8 @@
+PROGRAM error04;
+  VAR a : ARRAY 10 OF INTEGER;
+  VAR b : RECORD x, y : INTEGER; END;
+
+BEGIN
+  a[0] := 1;
+  a[b] := 2;
+END.

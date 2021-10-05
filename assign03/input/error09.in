@@ -1,0 +1,6 @@
+PROGRAM error09;
+  CONST x = (139 + 14) DIV (3 - 2 - 1);
+
+BEGIN
+  WRITE x;
+END.

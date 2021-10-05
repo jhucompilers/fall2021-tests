@@ -1,0 +1,7 @@
+PROGRAM error11;
+  VAR p : RECORD name : ARRAY 20 OF CHAR; age : INTEGER; END;
+
+BEGIN
+  READ p;
+  WRITE p.age;
+END.

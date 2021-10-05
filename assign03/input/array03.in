@@ -1,0 +1,12 @@
+PROGRAM arrao03;
+
+    TYPE Empty = ARRAY 0 OF INTEGER;
+    VAR a, b: Empty;
+
+BEGIN
+    -- a := b;
+   -- this assignment will be invalid at run-time (due to out
+   -- out of bounds array indices), but is allowed at compile
+   -- time
+   a[0] := b[0];
+END.

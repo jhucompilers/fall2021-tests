@@ -1,0 +1,6 @@
+PROGRAM array04;
+VAR a : ARRAY 10 OF INTEGER;
+
+BEGIN
+  a[-1] := 42;
+END.

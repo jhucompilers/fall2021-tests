@@ -1,0 +1,6 @@
+PROGRAM error05;
+  VAR q : CHAR;
+
+BEGIN
+  q.foo := 1;
+END.

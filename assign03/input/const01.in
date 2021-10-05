@@ -1,0 +1,7 @@
+PROGRAM const01;
+    CONST one = 1;
+    VAR one : INTEGER;
+BEGIN
+    one := one;
+    WRITE one;
+END.

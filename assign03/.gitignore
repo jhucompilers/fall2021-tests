@@ -1,0 +1,5 @@
+/compiler
+/*.gv
+/*.pdf
+/actual_output
+/actual_error

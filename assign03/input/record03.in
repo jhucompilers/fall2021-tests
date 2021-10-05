@@ -1,0 +1,8 @@
+PROGRAM record03;
+  TYPE int = INTEGER;
+  VAR x : RECORD
+    int : int;
+  END;
+BEGIN
+    READ x.int;
+END.
