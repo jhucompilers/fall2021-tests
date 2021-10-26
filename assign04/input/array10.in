@@ -1,0 +1,73 @@
+PROGRAM multidim10;
+  -- this program multiplies 10x10 square matrices,
+  -- represented as 100 element 1-D arrays
+  CONST M = 10;
+  CONST N = M*M;
+  TYPE Matrix = ARRAY N OF INTEGER;
+  VAR a, b, c : Matrix;
+  VAR i, j, k, r, val : INTEGER;
+
+BEGIN
+  -- read matrix a
+  i := 0;
+  WHILE i < M DO
+    j := 0;
+    WHILE j < M DO
+      READ a[i * M + j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  -- read matrix b
+  i := 0;
+  WHILE i < M DO
+    j := 0;
+    WHILE j < M DO
+      READ b[i * M + j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  -- initialize matrix c
+  i := 0;
+  WHILE i < M DO
+    j := 0;
+    WHILE j < M DO
+      c[i * M + j] := 0;
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  -- do the matrix multiplication
+  k := 0;
+  WHILE k < M DO
+    i := 0;
+    WHILE i < M DO
+      r := a[i * M + k];
+      j := 0;
+      WHILE j < M DO
+        val := c[i * M + j];
+        val := val + (r * b[k * M + j]);
+        c[i * M + j] := val;
+        j := j + 1;
+      END;
+      i := i + 1;
+    END;
+    k := k + 1;
+  END;
+
+  -- print the product matrix
+  i := 0;
+  WHILE i < M DO
+    j := 0;
+    WHILE j < M DO
+      WRITE c[i * M + j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+  
+END.

@@ -1,0 +1,11 @@
+PROGRAM decision02;
+  VAR n : INTEGER;
+
+BEGIN
+  READ n;
+  IF n < 18 THEN
+    WRITE 0;
+  ELSE
+    WRITE 1;
+  END;
+END.

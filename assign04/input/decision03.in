@@ -1,0 +1,64 @@
+PROGRAM decision03;
+  VAR n : INTEGER;
+
+BEGIN
+  READ n;
+  IF n >= 50 THEN
+    IF n MOD 2 = 0 THEN
+      WRITE 1;
+    ELSE
+      WRITE 2;
+    END;
+  ELSE
+    IF n MOD 2 = 0 THEN
+      WRITE 3;
+    ELSE
+      WRITE 4;
+    END;
+  END;
+
+  READ n;
+  IF n <= 50 THEN
+    IF n MOD 2 = 0 THEN
+      WRITE 1;
+    ELSE
+      WRITE 2;
+    END;
+  ELSE
+    IF n MOD 2 = 0 THEN
+      WRITE 3;
+    ELSE
+      WRITE 4;
+    END;
+  END;
+
+  READ n;
+  IF n > 50 THEN
+    IF n MOD 2 = 0 THEN
+      WRITE 1;
+    ELSE
+      WRITE 2;
+    END;
+  ELSE
+    IF n MOD 2 = 0 THEN
+      WRITE 3;
+    ELSE
+      WRITE 4;
+    END;
+  END;
+
+  READ n;
+  IF n < 50 THEN
+    IF n MOD 2 = 0 THEN
+      WRITE 1;
+    ELSE
+      WRITE 2;
+    END;
+  ELSE
+    IF n MOD 2 = 0 THEN
+      WRITE 3;
+    ELSE
+      WRITE 4;
+    END;
+  END;
+END.

@@ -1,0 +1,22 @@
+PROGRAM record01;
+  TYPE Vec3 = RECORD
+    x, y, z: INTEGER;
+  END;
+  VAR a, b : Vec3;
+
+BEGIN
+  a.x := 1;
+  a.y := 2;
+  a.z := 3;
+  b.x := 12;
+  b.y := 49;
+  b.z := 67;
+
+  WRITE a.x;
+  WRITE a.y;
+  WRITE a.z;
+
+  WRITE b.x;
+  WRITE b.y;
+  WRITE b.z;
+END.

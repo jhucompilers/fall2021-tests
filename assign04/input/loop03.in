@@ -1,0 +1,15 @@
+PROGRAM loop03;
+  VAR n, count: INTEGER;
+
+BEGIN
+  READ n;
+
+  count := 0;
+
+  WHILE n > 1 DO
+    n := n DIV 2;
+    count := count + 1;
+  END;
+
+  WRITE count;
+END.

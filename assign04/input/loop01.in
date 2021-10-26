@@ -1,0 +1,16 @@
+PROGRAM SumToN;
+  VAR i, sum, n: INTEGER;
+
+BEGIN
+  -- read integer from user
+  READ n;
+  -- compute sum from 1 to the integer
+  i := 1;
+  sum := 0;
+  WHILE i <= n DO
+    sum := sum + i;
+    i := i + 1;
+  END;
+  -- output the sum
+  WRITE sum;
+END.
