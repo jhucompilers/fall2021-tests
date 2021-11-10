@@ -1,0 +1,12 @@
+
+
+function orig(x) {
+    foo(x);
+}
+
+function foo(x) {
+    x+2;
+}
+
+
+orig(2);

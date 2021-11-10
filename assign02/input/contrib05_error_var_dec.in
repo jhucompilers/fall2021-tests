@@ -1,0 +1,8 @@
+function foo() {
+    x+6;
+}
+
+var x;
+x=2;
+
+foo();
