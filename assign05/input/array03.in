@@ -1,0 +1,27 @@
+PROGRAM array03;
+  VAR x, n, keep_going, sum : INTEGER;
+  VAR arr : ARRAY 100 OF INTEGER;
+
+BEGIN
+  keep_going := 1;
+  n := 0;
+
+  WHILE keep_going # 0 DO
+    READ x;
+    IF x < 0 THEN
+      keep_going := 0;
+    ELSE
+      arr[n] := x;
+      n := n + 1;
+    END;
+  END;
+
+  x := 0;
+  sum := 0;
+  WHILE x < n DO
+    sum := sum + arr[x];
+    x := x + 1;
+  END;
+
+  WRITE sum;
+END.

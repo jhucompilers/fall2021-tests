@@ -1,0 +1,8 @@
+PROGRAM arith01;
+  VAR a, b: INTEGER;
+
+BEGIN
+  a := 2;
+  b := 3;
+  WRITE a + b;
+END.

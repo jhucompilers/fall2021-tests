@@ -1,0 +1,34 @@
+PROGRAM record21;
+  -- record type containing 2D array
+  TYPE Board = RECORD
+    turn : INTEGER;
+    grid : ARRAY 3 OF ARRAY 3 OF INTEGER;
+  END;
+  VAR board: Board;
+  VAR i, j: INTEGER;
+
+BEGIN
+  READ board.turn;
+
+  i := 0;
+  WHILE i < 3 DO
+    j := 0;
+    WHILE j < 3 DO
+      READ board.grid[i, j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  WRITE (board.turn + 1) MOD 2;
+
+  i := 0;
+  WHILE i < 3 DO
+    j := 0;
+    WHILE j < 3 DO
+      WRITE board.grid[i, j] * 2;
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+END.

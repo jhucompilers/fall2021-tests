@@ -1,0 +1,7 @@
+PROGRAM arith03;
+  VAR a : INTEGER;
+
+BEGIN
+  a := 27 - 5 - 3;
+  WRITE a;
+END.

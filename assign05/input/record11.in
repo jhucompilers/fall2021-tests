@@ -1,0 +1,23 @@
+PROGRAM record11;
+  TYPE Foo = RECORD
+    x : INTEGER;
+    arr : ARRAY 10 OF INTEGER;
+  END;
+  VAR rec : Foo;
+  VAR i : INTEGER;
+
+BEGIN
+  rec.x := 121;
+  i := 0;
+  WHILE i < 10 DO
+    READ rec.arr[i];
+    i := i + 1;
+  END;
+
+  WRITE rec.x;
+  i := 0;
+  WHILE i < 10 DO
+    WRITE rec.arr[i];
+    i := i + 1;
+  END;
+END.

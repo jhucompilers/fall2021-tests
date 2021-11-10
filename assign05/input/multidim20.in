@@ -1,0 +1,71 @@
+  PROGRAM multidim10;
+  -- this program multiplies 500x500 square matrices
+  CONST N = 500;
+  TYPE Matrix = ARRAY N OF ARRAY N OF INTEGER;
+  VAR a, b, c : Matrix;
+  VAR i, j, k, r, val : INTEGER;
+
+BEGIN
+  -- read matrix a
+  i := 0;
+  WHILE i < N DO
+    j := 0;
+    WHILE j < N DO
+      READ a[i, j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  -- read matrix b
+  i := 0;
+  WHILE i < N DO
+    j := 0;
+    WHILE j < N DO
+      READ b[i, j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  -- initialize matrix c
+  i := 0;
+  WHILE i < N DO
+    j := 0;
+    WHILE j < N DO
+      c[i, j] := 0;
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  -- do the matrix multiplication
+  k := 0;
+  WHILE k < N DO
+    i := 0;
+    WHILE i < N DO
+      r := a[i, k];
+      j := 0;
+      WHILE j < N DO
+        val := c[i, j];
+        val := val + (r * b[k, j]);
+        c[i, j] := val;
+        j := j + 1;
+      END;
+      i := i + 1;
+    END;
+    k := k + 1;
+  END;
+
+  -- print the product matrix
+  i := 0;
+  WHILE i < N DO
+    j := 0;
+    WHILE j < N DO
+      WRITE c[i, j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+  
+END.

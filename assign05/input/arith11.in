@@ -1,0 +1,9 @@
+PROGRAM arith11;
+  VAR x, y, z : INTEGER;
+
+BEGIN
+  READ x;
+  READ y;
+  z := x MOD y;
+  WRITE z;
+END.

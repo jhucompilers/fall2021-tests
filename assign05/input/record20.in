@@ -1,0 +1,32 @@
+PROGRAM record20;
+  -- 2D array of records
+  TYPE Pair = RECORD
+    x, y: INTEGER;
+  END;
+  VAR grid: ARRAY 3 OF ARRAY 3 OF Pair;
+  VAR i, j: INTEGER;
+
+BEGIN
+  i := 0;
+  WHILE i < 3 DO
+    j := 0;
+    WHILE j < 3 DO
+      READ grid[i, j].x;
+      READ grid[i, j].y;
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  i := 0;
+  WHILE i < 3 DO
+    j := 0;
+    WHILE j < 3 DO
+      
+      WRITE grid[i, j].x * grid[i, j].y;
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+END.

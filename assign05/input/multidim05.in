@@ -1,0 +1,26 @@
+PROGRAM multidim05;
+  TYPE Matrix = ARRAY 10 OF ARRAY 10 OF INTEGER;
+  VAR m : Matrix;
+  VAR i, j : INTEGER;
+
+BEGIN
+  i := 0;
+  WHILE i < 10 DO
+    j := 0;
+    WHILE j < 10 DO
+      m[i, j] := i * j;
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+
+  i := 0;
+  WHILE i < 10 DO
+    j := 0;
+    WHILE j < 10 DO
+      WRITE m[i, j];
+      j := j + 1;
+    END;
+    i := i + 1;
+  END;
+END.

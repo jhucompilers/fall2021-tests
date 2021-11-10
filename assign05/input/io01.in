@@ -1,0 +1,7 @@
+PROGRAM io01;
+  VAR a : INTEGER;
+
+BEGIN
+  READ a;
+  WRITE a;
+END.
